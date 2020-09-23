@@ -1,0 +1,48 @@
+@media only screen and (min-width: 400px) {
+    html {
+        background-color: red;
+        font-size: 21.33333333px !important;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        background-color: green;
+        font-size: 21px !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    html {
+        background-color: blue;
+        font-size: 25.6px !important;
+    }
+}
+
+@media (min-width: 576px) {
+    html {
+        background-color: blue;
+        font-size: 20px !important;
+    }
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

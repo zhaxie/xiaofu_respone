@@ -1,0 +1,169 @@
+.theme-font-color {
+    color: #253B6D;
+}
+
+.theme-bg-color {
+    background-color: #253B6D;
+}
+
+.t-c-red, .theme-color-red {
+    color: #BF1E2E;
+}
+
+.t-bg-red, .theme-bg-red {
+    background-color: #BF1E2E;
+}
+
+/* 通用提交按钮 */
+
+.com-comfirm-btn {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    border-radius: 0.2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+.input-with-boxshow {
+    box-shadow: 0px 2px 35px 0px rgba(0, 0, 0, 0.11);
+}
+
+.input-with-boxshow .must-need::before {
+    content: '*';
+    display: inline-block;
+    color: #BF1E2E;
+    margin-right: 0.2rem;
+}
+
+.input-with-boxshow .input-box {
+    height: 2.2rem;
+    font-size: 0.75rem;
+    color: #606060;
+}
+
+/* 公用--查看更多 */
+.com-to-more {
+    height: 2.5rem;
+}
+
+.com-to-more .rotate-90 {
+    transform: rotate(90deg);
+}
+
+.com-to-more .rotate-90.active {
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+/* ---------------
+    login 
+-----------------*/
+.login-top .icon-rightTopBg{
+    width: 8.7rem;
+    height: 6.95rem;
+  }
+  .canter-top{
+    width: 10.65rem;
+    height: 5.25rem;
+  }
+  .login-box{
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+  .input-with-name{
+    background:#f7f7fb;
+    border-radius: 0.2rem;
+    margin-bottom: 1.15rem;
+  }
+  .input-with-name .input-content{
+    line-height: 1.6rem;
+    background-color: transparent;
+    font-size: 0.8rem;
+    color: #333;
+  }
+  .input-with-name .input-content::-webkit-input-placeholder{
+    color: #ccc;
+  }
+  .input-with-name .input-name{
+      font-size: 0.75rem;
+      color: #606060;
+  }
+  .input-with-name .input-content{
+      font-size: 0.8rem;
+      color: #333;
+  }
+  .input-with-name .input-name.active::before{
+    content: '*';
+    display: inline-block;
+    color: #BF1E2E;
+    margin-right: 0.2rem;
+  }
+  .input-with-name .send-btn{
+    min-width: 4rem;
+    line-height: 1.6rem;
+    padding: 0 0.75rem;
+    border-radius: 0.2rem;
+    margin-top: -1.1rem;
+    background-color: rgba(191, 30, 46, 0.4);
+  }
+  .input-with-name .send-btn.active{
+    background-color: #BF1E2E;
+  }
+  .input-with-name .select-box{
+    font-size: 0.7rem;
+    color: #333;
+    overflow: hidden;
+  }
+  .login-check{
+      color: #333;
+      font-size: 0.7rem;
+  }
+  .login-check img:last-child{
+    display: none;
+  }
+  .login-check.active img:first-child{
+    display: none;
+  }
+  .login-check.active img:last-child{
+    display: block;
+  }
+  
+  
+  .forget-btn-list .fb-item{
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+  
+  .login-bottom-bg{
+    width: 7.5rem;
+    height: 5.75rem;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .charge-num{
+    height: 4rem;
+    box-shadow:0px 2px 35px 0px rgba(0, 0, 0, 0.11);
+  }
+  .charge-num textarea::-webkit-input-placeholder{
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .login-big-title{
+    font-family: 'MicrosoftYaHei';
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #000;
+  }
+  .login-big-title.register{
+    left: 1.6rem;
+    bottom: 0;
+    line-height: 1;
+  }
+  

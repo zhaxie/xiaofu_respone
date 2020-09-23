@@ -1,32 +1,81 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <!-- 顶部导航 -->
+    <HeaderNav :navListObj="navListObj"></HeaderNav>
+
+    <!-- 中间的显示区域 -->
+    <div>
+      <router-view />
     </div>
-    <router-view/>
+
+    <!-- 顶部底部导航 -->
+    <footerNav :navListObj="navListObj"></footerNav>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HeaderNav from "@/components/headerNav.vue";
+import footerNav from "@/components/footerNav.vue";
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components: {
+    HeaderNav,
+    footerNav
+  },
+  data() {
+    return {
+      navListObj: {
+        //主要的导航
+        home: {
+          name: "Home",
+          index: 0,
+          url: "/",
+          iconUrl: require("@/assets/icon/icon-home.png"),
+          iconUrl_active: require("@/assets/icon/icon-home-active.png")
+        },
+        about: {
+          name: "About",
+          index: 1,
+          url: "/user/about",
+          iconUrl: require("@/assets/icon/icon-aboutUs.png"),
+          iconUrl_active: require("@/assets/icon/icon-aboutUs-active.png")
+        },
+        concatUs: {
+          name: "Contact",
+          index: 2,
+          url: "/user/concatUs",
+          iconUrl: require("@/assets/icon/icon-concatUs.png"),
+          iconUrl_active: require("@/assets/icon/icon-concatUs-active.png")
+        },
+        userCenter: {
+          name: "UserCenter",
+          index: 3,
+          url: "/user/userCenter",
+          iconUrl: require("@/assets/icon/icon-per.png"),
+          iconUrl_active: require("@/assets/icon/icon-per-active.png")
+        },
+        // 其他导航
+        login: {
+          name: 'Login',
+          url: '/user/login'
+        },
+        register: {
+          name: 'Register',
+          url: '/user/register'
+        },
+        shoppingCart: {
+          name: 'shoppingCart',
+          url: '/goods/shoppingCart'
+        },
+        search: {
+          name: 'search',
+          url: '/goods/search'
+        },
+      }
+    };
   }
-}
+};
+</script>
+
+<style lang="scss">
 </style>
